@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    font-family: 'Poppins_black';
+    transition: all .3s;
+    color: var(--blanc);
+    cursor: default;
+}
+header h1:hover{
+    color: var(--vert-clair);
+    transition: all .3s;
+    text-shadow: #8EB897;
+    text-shadow: 1px 1px 10px #C3E8BD;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--blanc);
+    font-family: 'Poppins_regular';
+    font-size: 16px;
+    display: block;
+    border: solid 1px var(--noir);
+    border-radius: 6px;
+    padding: 5px 10px;
+    transition: all .3s;
+}
+header nav ul li a:hover{
+    border: solid 1px var(--vert-clair);
+    transition: all .3s;
+    color: var(--vert-clair);
+    transform: scale(1.2);
+}
