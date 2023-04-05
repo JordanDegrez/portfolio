@@ -11,12 +11,12 @@ body{
 
 /**slider mes projets**/
 
-#slide-projet-spotify{background-color: purple;}
-#slide-projet-2{background-color: blue;}
-#slide-projet-3{background-color: green;}
-#slide-projet-4{background-color: red;}
-#slide-projet-5{background-color: yellow;}
-#slide-projet-6{background-color: orange;}
+#slide-projet-spotify{background-color: var(--vert-clair);}
+#slide-projet-2{background-color: var(--vert);}
+#slide-projet-3{background-color: var(--vert-fonce);}
+#slide-projet-4{background-color: var(--vert-clair);}
+#slide-projet-5{background-color: var(--vert);}
+#slide-projet-6{background-color: var(--vert-fonce);}
 
 .slider {
     position: relative;
