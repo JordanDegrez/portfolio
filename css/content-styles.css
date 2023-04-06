@@ -65,32 +65,19 @@ body{
   }
 }
 
-[class^="cursor"]{
+body{
+  cursor: none;
+}
+.cursor {
+  pointer-events: none;
+}
+.cursor__ball {
   position: fixed;
   top: 0;
   left: 0;
-  transform: translate(-50%,-50%);
-  border-radius: 50%;
-  z-index: 9999;
-  pointer-events: none;
-}
-.cursor-outer{
-  width: 50px;
-  height: 50px;
-  border: 1px solid #fff;
-  transition: all .08s ease-out;
-}
-.cursor-inner{
-  width: 7px;
-  height: 7px;
-  background: #fff;
-}
-.content:hover ~ .cursor-outer{
-  width: 90px;
-  height: 90px;
-  background: #fff;
   mix-blend-mode: difference;
+  z-index: 1000;
 }
-.content:hover ~ .cursor-inner{
-  opacity: 0;
+.cursor circle {
+  fill: #f7f8fa;
 }
