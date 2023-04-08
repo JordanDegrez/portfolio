@@ -65,16 +65,37 @@ body{
   }
 }
 
-.cursor {
-  pointer-events: none;
+/**contact**/
+#global-contact{
+  display: flex;
+  width: calc(100% - 60px);
+  margin: 50px auto;
+  justify-content: space-between;
 }
-.cursor__ball {
-  position: fixed;
-  top: 0;
-  left: 0;
-  mix-blend-mode: difference;
-  z-index: 1000;
+#contact-left, #contact-right{
+  width: calc(50% - 15px);
 }
-.cursor circle {
-  fill: #f7f8fa;
+#contact-left form{
+  display: flex;
+  flex-direction: column;
+}
+#contact-left form div{
+  gap: 15px;
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#contact-right{
+  position: relative;
+}
+#contact-right iframe{
+  transition: all .5s;
+  width: 100%;
+  position: absolute;
+}
+#contact-right iframe:hover{
+  transform: translateX(-51%) scale(1.1);
+  transition: all .5s;
+  box-shadow: 1px 1px 8px 3px #8EB897;
 }
