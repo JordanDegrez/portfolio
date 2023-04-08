@@ -1,12 +1,49 @@
 *{
     font-family: 'Poppins_regular';
     line-height: 1;
+    cursor: none;
 }
 body{
-    background-color: var(--noir);
-    padding: 0;
-    margin: 0;
-    color: var(--blanc);
+  background-color: var(--noir);
+  padding: 0;
+  margin: 0;
+  color: var(--blanc);
+}
+
+/**cusror**/
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: 1;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+}
+
+.hover {
+  background-color: var(--vert-clair);
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
 }
 
 /**slider mes projets**/
