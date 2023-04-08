@@ -65,9 +65,6 @@ body{
   }
 }
 
-body{
-  cursor: none;
-}
 .cursor {
   pointer-events: none;
 }
